@@ -6,19 +6,18 @@ li{
     list-style: none;
 }
 .login {
-  width: 410px;
+  width: 440px;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 58%;
+  top: 27%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 .login h2 {
   padding: 0 0 20px;
-  border-bottom: 2px solid #111;
-  text-align: center;
+  text-align: left;
   line-height: 1;
-  font-size: 32px;
+  font-size: 45px;
   color: #111;
 }
 .login > ul {
@@ -38,7 +37,7 @@ li{
     text-indent: 16px;
 }
 .login > ul li input::-webkit-input-placeholder {
-  font-size: 16px;
+  font-size: 18px;
   color: #9fa19f;
 }
 .login > ul li input[type="checkbox"] {
@@ -77,21 +76,10 @@ li{
 } 
 .login .cust{
     float: left;
-    width: 130px; 
-    margin: 37px;
+    width: 120px; 
+    margin-left: 20px;
+    margin-top: 30px;
     
-    
-}
-.login .cust_txt{
-    float: left;
-    line-height: 30px;
-   
-}
-.login .cust_btn{
-    float: right;
-    line-height: 30px;
-   
-      
 }
 .login div ul li ~ li:after {
   content: "";
@@ -115,5 +103,19 @@ li{
 .cust input {
   list-style: none;
   text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bg_ip {
+    width: 300px;
+}
+.box_line{
+    border:1px solid #111; 
+    width: 1000PX;
+    height: 500px;
+    margin-left: 2px;
     
 }
+
+
