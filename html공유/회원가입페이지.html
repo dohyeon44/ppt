@@ -5,67 +5,25 @@
     <title>회원가입 페이지</title>
     <link rel="stylesheet" href="layout.html" />
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#pageheader").load("페이지header.html");
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#pagefooter").load("footer.html");
-        });
-    </script>
     <style>
-        #content{
-            margin-top: 5%;
+        #signup{
+            width: 1000px;
+            padding: 0px;
+            margin: 0px;
         }
-        #Title {
-            margin-top: 50px;
-            position: relative;
-            margin-left: 20%;
-            margin-right: 20%;
+        #content {
+            margin-top: 30px;
         }
 
-        #TopTitle {
+        #Title {
+            height: 60px;
             font-size: 40px;
             font-weight: bold;
             border-bottom: 2px #d3d3d3 solid;
+            letter-spacing: 2px;
         }
-
-        #leftMenu {
-            margin-top: 10px;
-            margin-left: 7%;
-            border: none;
-        }
-
-        #Menu {
-            width: 200px;
-            margin-left: 0px;
-            font-size: 33px;
-            font-weight: bold;
-            text-align: center;
-            border-bottom: 2px #d3d3d3 solid;
-        }
-
-        #left1 {
-            width: 150px;
-            font-size: 25px;
-            margin-top: -5px;
-            margin-left: 25px;
-            line-height: 70px;
-            list-style: none;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        #main {
-            margin-left: 28%;
-            margin-top: -12%;
-        }
-
-        #main2 {
-            margin-left: 28%;
-            margin-top: 2%;
+        .main2 {
+            margin-top: 30px;
         }
 
         .id {
@@ -79,7 +37,7 @@
             position: relative;
         }
 
-        input {
+        .text{
             padding: 0;
             margin: 0;
             width: 400px;
@@ -89,94 +47,66 @@
             border-radius: 5px;
         }
 
-        #checkbtn {
-            width: 110px;
-            height: 40px;
-            margin-left: 50px;
-            text-align: center;
-            font-size: 17px;
-            color: white;
-            background: #585858;
-            border: none;
-            border-radius: 5px;
-            cursor:pointer;
-        }
-
         .pwt {
             font-size: 20px;
             text-align: center;
-            margin-left: 17%;
-        }
-
-        #pagefooter {
-            margin-top:15%;
+            margin-left: 23%;
         }
     </style>
 </head>
 
 <body>
-    <div id="pageheader"></div>
-    <div id="content">
+    <div id="signup">
         <div id="Title">
-            <div id="TopTitle" style="padding: 0px 20px 15px;">회원가입</div>
-
+            <div id="TopTitle" style="margin-left: 15px; "> 회원가입</div>
         </div>
-        <div id="leftMenu">
-            <div id="Menu" style="padding: 0px 0px 10px 0px;">회원서비스</div>
-        </div>
-        <div id="leftMenu">
-            <ul id="left1">
-                <li>로그인</li>
-                <li>회원가입</li>
-                <li>ID | PW찾기</li>
-            </ul>
-        </div>
-        <div id="main">
-            <div class="id">
-                <label for="id">아이디</label>
+        <div id="content">
+            <div id="main">
+                <div class="id">
+                    <label for="id">아이디</label>
+                </div>
+                <input type="text" class="text">
             </div>
-            <input type="text">
-        </div>
-        <div id="main2">
-            <div class="id">
-                <label for="pw">비밀번호</label>
+            <div class="main2">
+                <div class="id">
+                    <label for="pw">비밀번호</label>
+                </div>
+                <input type="text" class="text">
             </div>
-            <input type="text">
-        </div>
-        <div class="pwt">
-            * 8~15자 이내 영문, 숫자, 특수문자 중 2가지 이상을 조합해야 합니다.
-        </div>
-        <div id="main2">
-            <div class="id">
-                <label for="id">비밀번호 확인</label>
+            <div class="pwt">
+                * 8~15자 이내 영문, 숫자, 특수문자 중 2가지 이상을 조합해야 합니다.
             </div>
-            <input type="text">
-        </div>
-        <div id="main2">
-            <div class="id">
-                <label for="id">이메일</label>
+            <div class="main2">
+                <div class="id">
+                    <label for="id">비밀번호 확인</label>
+                </div>
+                <input type="text" class="text">
             </div>
-            <input type="text">
-        </div>
-        <div id="main2">
-            <div class="id">
-                <label for="id">이름</label>
+            <div class="main2">
+                <div class="id">
+                    <label for="id">이메일</label>
+                </div>
+                <input type="text" class="text">
             </div>
-            <input type="text">
-        </div>
-        <div id="main2">
-            <div class="id">
-                <label for="id">휴대전화</label>
+            <div class="main2">
+                <div class="id">
+                    <label for="id">이름</label>
+                </div>
+                <input type="text" class="text">
             </div>
-            <input type="text">
-        </div>
-        <div id="main2">
-            <div class="id">
-                <label for="id">소속명</label>
+            <div class="main2">
+                <div class="id">
+                    <label for="id">휴대전화</label>
+                </div>
+                <input type="text" class="text">
             </div>
-            <input type="text">
+            <div class="main2">
+                <div class="id">
+                    <label for="id">소속명</label>
+                </div>
+                <input type="text" class="text">
+            </div>
         </div>
     </div>
-    <div id="pagefooter"></div>
 </body>
 </html>
