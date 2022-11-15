@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        
+      div {
+            
+        }
+
+        .search {
+            float: right;
+
+        }
+
+        .bl.sq {
+            background: url(/img/bullet_h2.gif) no-repeat;
+        }
+
+        h2.bl.sq {
+            padding-left: 18px;
+            background-position: 0.2em 0.5em;
+        }
+
+        .h1 {
+            position: static;
+            padding-top: 13px;
+            border-top: 1px solid #cccccc;
+            margin-right: 900px;
+            max-width: 800px;
+            min-width: 800px;
+            width: 800px;
+        }
+
+        /*       .h1.contents:after {
+            display: block;
+            clear: both;
+            content: " ";
+        }*/
+
+        .app_list ul li {
+            overflow: hidden;
+            position: relative;
+            float: left;
+            width: 220px;
+            height: 225px;
+            margin: 0 10px 10px 0;
+            padding: 9px;
+            border: 1px solid #d3d3d3;
+        }
+
+        .app_list ul li .photo img {
+            min-width: 220px;
+            min-height: 164px;
+            max-width: 220px;
+            max-height: 164px;
+        }
+
+        .app_list ul li .state {
+            position: absolute;
+            right: -55px;
+            width: 130px;
+        }
+
+        .page_wrap {
+            text-align: center;
+            font-size: 0;
+        }
+
+        .page_nation {
+            display: inline-block;
+        }
+
+        .page_nation .none {
+            display: none;
+        }
+
+        .page_nation a {
+            display: block;
+            margin: 0 3px;
+            float: left;
+            border: 1px solid #e6e6e6;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            background-color: #fff;
+            font-size: 13px;
+            color: #999;
+            text-decoration: none;
+        }
+
+        .page_nation .arrow {
+            border: 1px solid #ccc;
+        }
+
+        .page_nation .pprev {
+            background: #f8f8f8 url('img/page_pprev.png') no-repeat center center;
+            margin-left: 0;
+        }
+
+        .page_nation .prev {
+            background: #f8f8f8 url('img/page_prev.png') no-repeat center center;
+            margin-right: 7px;
+        }
+
+        .page_nation .next {
+            background: #f8f8f8 url('img/page_next.png') no-repeat center center;
+            margin-left: 7px;
+        }
+
+        .page_nation .nnext {
+            background: #f8f8f8 url('img/page_nnext.png') no-repeat center center;
+            margin-right: 0;
+        }
+
+        .page_nation a.active {
+            background-color: #42454c;
+            color: #fff;
+            border: 1px solid #42454c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h1 contents">
+        <div class="article">
+            <div class="search">
+                <form name="searchForm" method="post" action="boardlist.do"></form>
+                <input type="text" placeholder="검색어 입력">
+                <button>검색</button>
+            </div>
+            <br>
+            <div class="h2 article">
+                <h2 class="bl sq">나노팹센터</h2>
+                <div class="app_list">
+                    <ul>
+                        <li>
+                            <a href="/deviceview.do?pkid=28">
+                                <span class="photo">
+                                    <img src="/img/28_1.jpg" alt>
+                                </span>
+                                <br>
+                                <span class="title">unSmart printer</span>
+                                <br>
+                                <span class="info">
+                                    유지혜
+                                    <br>
+                                    02-3274-4810
+                                </span>
+                                <span class="state none">
+                                    예약가능
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/deviceview.do?pkid=28">
+                                <span class="photo">
+                                    <img src="/img/28_1.jpg" alt>
+                                </span>
+                                <br>
+                                <span class="title">Smart printer</span>
+                                <br>
+                                <span class="info">
+                                    유지혜
+                                    <br>
+                                    02-3274-4810
+                                </span>
+                                <span class="state none">
+                                    예약가능
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/deviceview.do?pkid=28">
+                                <span class="photo">
+                                    <img src="/img/28_1.jpg" alt>
+                                </span>
+                                <br>
+                                <span class="title">Smart printer</span>
+                                <br>
+                                <span class="info">
+                                    유지혜
+                                    <br>
+                                    02-3274-4810
+                                </span>
+                                <span class="state none">
+                                    예약가능
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/deviceview.do?pkid=28">
+                                <span class="photo">
+                                    <img src="/img/28_1.jpg" alt>
+                                </span>
+                                <br>
+                                <span class="title">Smart printer</span>
+                                <br>
+                                <span class="info">
+                                    유지혜
+                                    <br>
+                                    02-3274-4810
+                                </span>
+                                <span class="state none">
+                                    예약가능
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/deviceview.do?pkid=28">
+                                <span class="photo">
+                                    <img src="/img/28_1.jpg" alt>
+                                </span>
+                                <br>
+                                <span class="title">Smart printer</span>
+                                <br>
+                                <span class="info">
+                                    유지혜
+                                    <br>
+                                    02-3274-4810
+                                </span>
+                                <span class="state none">
+                                    예약가능
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/deviceview.do?pkid=28">
+                                <span class="photo">
+                                    <img src="/img/28_1.jpg" alt>
+                                </span>
+                                <br>
+                                <span class="title">Smart printer</span>
+                                <br>
+                                <span class="info">
+                                    유지혜
+                                    <br>
+                                    02-3274-4810
+                                </span>
+                                <span class="state none">
+                                    예약가능
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/deviceview.do?pkid=28">
+                                <span class="photo">
+                                    <img src="/img/28_1.jpg" alt>
+                                </span>
+                                <br>
+                                <span class="title">Smart printer</span>
+                                <br>
+                                <span class="info">
+                                    유지혜
+                                    <br>
+                                    02-3274-4810
+                                </span>
+                                <span class="state none">
+                                    예약가능
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/deviceview.do?pkid=28">
+                                <span class="photo">
+                                    <img src="/img/28_1.jpg" alt>
+                                </span>
+                                <br>
+                                <span class="title">Smart printer</span>
+                                <br>
+                                <span class="info">
+                                    유지혜
+                                    <br>
+                                    02-3274-4810
+                                </span>
+                                <span class="state none">
+                                    예약가능
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/deviceview.do?pkid=28">
+                                <span class="photo">
+                                    <img src="/img/28_1.jpg" alt>
+                                </span>
+                                <br>
+                                <span class="title">Smart printer</span>
+                                <br>
+                                <span class="info">
+                                    유지혜
+                                    <br>
+                                    02-3274-4810
+                                </span>
+                                <span class="state none">
+                                    예약가능
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="page_wrap">
+                        <div class="page_nation">
+                            <a class="arrow pprev" href="#"></a>
+                            <a class="arrow prev" href="#"></a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a class="arrow next" href="#"></a>
+                            <a class="arrow nnext" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body></html>
